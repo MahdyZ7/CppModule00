@@ -6,12 +6,11 @@
 /*   By: ayassin <ayassin@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:03:49 by ayassin           #+#    #+#             */
-/*   Updated: 2022/09/13 15:49:10 by ayassin          ###   ########.fr       */
+/*   Updated: 2022/09/13 15:55:12 by ayassin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contacts.hpp"
-#include <string>
 
 Contacts::Contacts()
 {
@@ -22,14 +21,14 @@ Contacts::Contacts()
 	setSecret("");	
 }
 
-Contacts::Contacts(string firts_name, string last_name, string nickname, string
-	phone_number, string darkest_secret)
+Contacts::Contacts(std::string firts_name, std::string last_name, 
+	std::string nickname, std::string phone_number, std::string secret)
 {
 	setFirstName(firts_name);
 	setLastName(last_name);
 	setNickname(nickname);
 	setPhoneNumber(phone_number);
-	setSecret(darkest_secret);	
+	setSecret(secret);	
 }
 
 Contacts::~Contacts(){}

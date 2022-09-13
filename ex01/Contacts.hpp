@@ -6,38 +6,37 @@
 /*   By: ayassin <ayassin@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 09:24:45 by ayassin           #+#    #+#             */
-/*   Updated: 2022/09/13 15:50:06 by ayassin          ###   ########.fr       */
+/*   Updated: 2022/09/13 15:55:30 by ayassin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACTS_CLASS_H
 #define CONTACTS_CLASS_H
 #include <iostream>
-#include <string>
 class Contacts {
 	public:
 		Contacts();
 		Contacts(const Contacts &copy);
-		Contacts(string firts_name, string last_name, string nickname, string
-			phone_number, string darkest_secret);
+		Contacts(std::string firts_name, std::string last_name,
+			std::string nickname, std::string phone_number, std::string secret);
 		~Contacts();
 		// comparision	
-		void	setFirstName(string str);
-		void	setLastName(string str);
-		void	setNickname(string str);
-		void	setPhoneNumber(string str);
-		void	setSecret(string str);
-		string	getFirstName(string str);
-		string	getLastName(string str);
-		string	getNickname(string str);
-		string	getPhoneNumber(string str);
-		string	getSecret(string str);
+		void		setFirstName(std::string str);
+		void		setLastName(std::string str);
+		void		setNickname(std::string str);
+		void		setPhoneNumber(std::string str);
+		void		setSecret(std::string str);
+		std::string	getFirstName(std::string str);
+		std::string	getLastName(std::string str);
+		std::string	getNickname(std::string str);
+		std::string	getPhoneNumber(std::string str);
+		std::string	getSecret(std::string str);
 	private:
-		string	firts_name;
-		string	last_name;
-		string	nickname;
-		string	phone_number;
-		string	darkest_secret;
+		std::string	firts_name;
+		std::string	last_name;
+		std::string	nickname;
+		std::string	phone_number;
+		std::string	darkest_secret;
 };
 
 #endif

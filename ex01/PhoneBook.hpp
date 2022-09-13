@@ -6,16 +6,19 @@
 /*   By: ayassin <ayassin@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 11:38:37 by ayassin           #+#    #+#             */
-/*   Updated: 2022/09/13 13:34:07 by ayassin          ###   ########.fr       */
+/*   Updated: 2022/09/13 16:12:14 by ayassin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACTS_CLASS_H
-#define CONTACTS_CLASS_H
-
+#ifndef PHONEBOOK_CLASS_H
+#define PHONEBOOK_CLASS_H
+#include "Contacts.hpp"
 class PhoneBook
 {
+	public:
 	
+	private:
+		Contacts arr[8];
 };
 
 #endif
