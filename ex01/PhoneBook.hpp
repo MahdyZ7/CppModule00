@@ -12,13 +12,20 @@
 
 #ifndef PHONEBOOK_CLASS_H
 #define PHONEBOOK_CLASS_H
-#include "Contacts.hpp"
+#include "Contact.hpp"
 class PhoneBook
 {
 	public:
-	
+		PhoneBook();
+		~PhoneBook();
+		void	addContact(Contact person);
+		int		printContacts(void);
+		int		printIndex(int i);
 	private:
-		Contacts arr[8];
+		Contact	arr[8];
+		int		tail;
+		int		len;
+		int 	size;
 };
 
 #endif

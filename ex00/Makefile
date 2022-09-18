@@ -16,7 +16,7 @@ SRC = megaphone.cpp
 
 CC = c++
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra -std=c++98
 
 ##OBJS = $(SRC:.c=.obj)
 

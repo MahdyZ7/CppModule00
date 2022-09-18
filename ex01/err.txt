@@ -1,0 +1,5 @@
+trim length of string
+contro + d
+print contacts
+print index
+cin of the index
