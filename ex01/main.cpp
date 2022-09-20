@@ -32,15 +32,15 @@ void	add_contact(PhoneBook *p1)
 int	main(void)
 {
 	PhoneBook		p1;
-	int				count = 0;
 	std::string		usr_input;
 
-	while (count == 0)
+	std::cout << "Welcome to our first contacts program ..." << std::endl;
+	while (1)
 	{
 		std::cout << "Enter a comand: [ADD, SEARCH, EXIT]" << std::endl;
 		getline(std::cin, usr_input);
 		if (usr_input == "EXIT")
-			count = 1;
+			break;
 		else if (usr_input == "ADD")
 			add_contact(&p1);
 		else if (usr_input == "SEARCH")
@@ -59,5 +59,6 @@ int	main(void)
 		if (std::cin.eof()==1) 
 			break;
 	}
+	std::cout << "\nsee you around\n";
 	return (0);
 }
