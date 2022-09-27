@@ -17,10 +17,10 @@
 
 class Contact {
 	public:
-		Contact();
+		Contact(void);
 		Contact(std::string firts_name, std::string last_name,
 			std::string nickname, std::string phone_number, std::string secret);
-		~Contact();
+		~Contact(void);
 		int			setFirstName(std::string str);
 		int			setLastName(std::string str);
 		int			setNickname(std::string str);
